@@ -1,3 +1,31 @@
+# Pomodoro-PWA
+
+An offline friendly, time management progressive web app, built using service workers.
+
+## What is Pomodoro?
+
+Inspires you to work in 25 minute, 5 minute break cycles so that you can keep your concentration for longer periods of time.
+
+Tl:dr: a glorified egg timer
+
+See more about the science: http://pomodorotechnique.com/
+
+![alt tag](https://raw.githubusercontent.com/whiteswift/pomodoro-pwa/master/assets/images/wallpaper.png)
+
+## Usage
+
+1. npm install
+
+2. npm start
+
+3. Navigate to localhost:8080
+
+## Demo
+
+Navigate to https://whiteswift.github.io/
+
+## Licence
+
 The MIT License (MIT)
 
 Copyright (c) 2016 whiteswift

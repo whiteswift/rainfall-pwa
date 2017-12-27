@@ -1,0 +1,26 @@
+{
+  "name": "Rainfall",
+  "short_name": "Rainfall",
+  "icons": [
+    {
+      "src": "assets/images/rainfall_144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "assets/images/rainfall_256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "assets/images/rainfall_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#00abff",
+  "theme_color": "#00abff"
+}
