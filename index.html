@@ -23,23 +23,14 @@
 <body>
   <div id='rainfall'>
     <h1 id='status'>Rainfall</h1>
-    <div id='clock-container'>
-      <div id="clockdiv">
-        
-        <div id='button-container'>
-          <button id='tomato' class='visible'>
-            <div>☂️</div>
-            <!-- <img src="assets/images/rainfall_144.png" alt="tomato button"> -->
-          </button>
-          <!-- <div id='break-buttons' class='hidden'>
-            <button id='five-min'>
-              5 MINS
-            </button>
-            <button id='ten-min'>
-              10 MINS
-            </button> -->
-          </div>
-        </div>
+    <div id='container'>
+      <div id='button-container'>
+        <button id='umbrella-button' class='visible'>
+          <div ='umbrella-logo'>☂️</div>
+          <audio id='rain-audio' loop>
+            <source src="assets/media/rain.mp3" type="audio/mpeg">
+          </audio>
+        </button>
       </div>
     </div>
     <div id='volume-container'>

@@ -6,6 +6,7 @@
 - Background media api playback
 - Get svg for rain icon
 - favicon
+- font-display
 
 ## Nice to have
 - Get some design inspiration
