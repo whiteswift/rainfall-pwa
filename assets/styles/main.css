@@ -1,15 +1,15 @@
-body {
-    margin: 0;
-    background-color: #00abff;
-    text-align: center;
-    font-weight: 100;
-    -webkit-font-smoothing: antialiased;
-}
 * {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none
+}
+body {
+    margin: 0;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Gotham-medium', Arial, sans-serif;
+    font-display: swap;
 }
 .visible {
   display: inline-block;
@@ -20,7 +20,7 @@ body {
 #container, body, html {
     height: 100%
 }
-#container {
+.flex-container {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -41,49 +41,18 @@ body {
 h1 {
     color: #eee;
     font-weight: 100;
-    font-size: 8vw;
-    font-family: 'Gotham-medium', Arial, sans-serif;
-    padding-top: 6vw;
+    font-size: 10vmin;
+    padding-top: 6vmin;
     transition: 0.5s ease;
 }
-
 #umbrella-button {
     border: none;
     background: none;
-    font-size: 12vh;
+    font-size: 16vmin;
+    margin-top: 3vmin;
     outline: none;
     cursor: pointer;
 }
-
-#clockdiv {
-    color: #fff;
-    display: inline-block;
-    font-weight: 100;
-    text-align: center;
-    font-size: 5vmin;
-    position: relative;
-}
-#clockdiv div > span {
-    padding: 0.3em;
-    border-radius: 3px;
-    background: #00abff;
-    display: inline-block;
-    letter-spacing: 1px;
-    font-size: 12vmax;
-    color: white;
-}
-#clock-container {
-  width: 100%;
-}
-#time-container {
-    font-family: Helvetica, Arial, Sans-serif;
-    padding: 10px;
-    border-radius: 3px;
-}
-#time-container > div {
-    display: inline-block;
-}
-
 #volume-container {
     width: 100%;
     position: fixed;
@@ -103,7 +72,6 @@ h1 {
     position: relative;
     top: 1vmin;
 }
-
 @-webkit-keyframes fadeOut {
     from { opacity: 1; }
       to { opacity: 0; }
@@ -112,9 +80,8 @@ h1 {
     from { opacity: 1; }
       to { opacity: 0; }
 }
-
 @font-face {
     font-family: 'Gotham-medium';
-    src: url('../assets/fonts/gotham-medium.woff') format('woff');
+    src: url('../fonts/gotham-medium.woff') format('woff');
     font-display: swap;
 }

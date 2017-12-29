@@ -1,12 +1,14 @@
 # TODO
 
 ## MVP
-- Theme colour
-- Get sound
+X- Theme colour
+X- Get sound
+X- Fix pause loop
 - Background media api playback
 - Get svg for rain icon
 - favicon
-- font-display
+X- font-display
+- Get .woff2
 
 ## Nice to have
 - Get some design inspiration
