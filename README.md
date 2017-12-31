@@ -1,34 +1,28 @@
-# Pomodoro-PWA
+# Rainfall-PWA
 
-An offline friendly, time management progressive web app, built using service workers.
+An offline friendly, concentration tool progressive web app, built using service workers.
 
-## What is Pomodoro?
+## What is Rainfall?
 
-Inspires you to work in 25 minute, 5 minute break cycles so that you can keep your concentration for longer periods of time.
+An ambient noise app to help you concentrate on your work. Press the umbrella to hear a looped rainfall.
 
-Tl:dr: a glorified egg timer
-
-See more about the science: http://pomodorotechnique.com/
-
-![alt tag](https://raw.githubusercontent.com/whiteswift/pomodoro-pwa/master/assets/images/wallpaper.png)
+![alt tag](https://raw.githubusercontent.com/whiteswift/rainfall-pwa/master/assets/images/wallpaper.png)
 
 ## Usage
 
-1. npm install
+1. Start a simple HTTP python server
 
-2. npm start
-
-3. Navigate to localhost:8080
+2. Navigate to localhost:8080
 
 ## Demo
 
-Navigate to https://whiteswift.github.io/
+Coming soon
 
 ## Licence
 
 The MIT License (MIT)
 
-Copyright (c) 2016 whiteswift
+Copyright (c) 2017 whiteswift
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

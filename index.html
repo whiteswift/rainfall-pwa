@@ -16,7 +16,7 @@
   <meta name="theme-color" content="#00abff">
   <meta property="og:title" content="Rainfall ☔️">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://whiteswift.github.io/rainfall/">
+  <meta property="og:url" content="https://whiteswift.github.io/rainfall-pwa/">
   <meta property="og:description" content="">
   <style>body{background-color:#00abff;text-align:center;}</style>
   <link rel='stylesheet' type='text/css' href='assets/styles/main.css' />
@@ -27,17 +27,12 @@
     <div id='container'>
       <div id='button-container'>
         <button id='umbrella-button' class='visible'>
-          <div ='umbrella-logo'>☂️</div>
+          <img id='umbrella-logo' src='assets/images/rain.svg' />
         </button>
       </div>
     </div>
-    <div id='volume-container'>
-      <div id='volume'>
-        <img src='assets/images/volume_on.svg' alt='volume on/off' />
-      </div>
-    </div>
   </div>
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js', {
         scope: '/'
@@ -50,7 +45,7 @@
       console.log('Service Worker Ready');
     })
   }
-  </script> -->
+  </script>
   <script async src='assets/scripts/main.js'></script>
 </body>
 </html>
