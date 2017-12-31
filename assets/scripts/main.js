@@ -3,11 +3,11 @@
   var status = document.getElementById("status");
   var umbrellaButton = document.querySelector("#umbrella-button");
   var umbrellaLogo = document.querySelector("#umbrella-logo");
-  var audioFile = new Audio("/assets/media/rain.mp3");
+  var audioFile = new Audio("assets/media/rain.mp3");
 
   audioFile.addEventListener("timeupdate",
     function() {
-      console.log('currentTime',this.currentTime);
+      // console.log('currentTime',this.currentTime);
       var buffer = 0.85;
       if (this.currentTime > this.duration - buffer) {
         this.currentTime = 0;
@@ -51,11 +51,11 @@
       navigator.mediaSession.metadata = new MediaMetadata({
         title: 'Rainfall',
         artist: '',
-        album: 'To help you concentrate',
+        album: 'Focus',
         artwork: [
-          { src: '../images/rainfall_144.png', sizes: '144x144', type: 'image/png' },
-          { src: '../images/rainfall_256.png', sizes: '256x256', type: 'image/png' },
-          { src: '../images/rainfall_512.png', sizes: '512x512', type: 'image/png' }
+          { src: 'assets/images/rainfall_144.png', sizes: '144x144', type: 'image/png' },
+          { src: 'assets/images/rainfall_256.png', sizes: '256x256', type: 'image/png' },
+          { src: 'assets/images/rainfall_512.png', sizes: '512x512', type: 'image/png' }
         ]
       });
     
