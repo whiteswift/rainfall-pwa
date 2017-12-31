@@ -59,10 +59,10 @@
         ]
       });
     
-      navigator.mediaSession.setActionHandler('play', audioFile.play());
-      navigator.mediaSession.setActionHandler('pause', audioFile.pause());
-      navigator.mediaSession.setActionHandler('previoustrack', restartAudio());
-      navigator.mediaSession.setActionHandler('nexttrack', restartAudio());
+      navigator.mediaSession.setActionHandler('play', audioFile.play);
+      navigator.mediaSession.setActionHandler('pause', audioFile.pause);
+      navigator.mediaSession.setActionHandler('previoustrack', restartudio);
+      navigator.mediaSession.setActionHandler('nexttrack', restartAudio);
     }
   }
 
