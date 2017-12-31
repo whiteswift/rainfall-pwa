@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>☔️</title>
+  <title>Rainfall</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Soothing rain sounds to help you concentrate ☔️">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
     <div id='container'>
       <div id='button-container'>
         <button id='umbrella-button' class='visible'>
-          <img id='umbrella-logo' src='assets/images/rain.svg' />
+          <img id='umbrella-logo' class='rotate' src='assets/images/rain.svg' />
         </button>
       </div>
     </div>
@@ -35,11 +35,11 @@
   <script type="text/javascript">
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js', {
-        scope: '/'
-      })
-      .then(function(reg) {
-        console.log('Service Worker Registered');
-      });
+      scope: '/'
+    })
+    .then(function(reg) {
+      console.log('Service Worker Registered');
+    });
 
     navigator.serviceWorker.ready.then(function(reg) {
       console.log('Service Worker Ready');

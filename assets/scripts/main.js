@@ -1,13 +1,14 @@
 (function() {
   "use strict";
   var status = document.getElementById("status");
-  var ubmrellaButton = document.querySelector("#umbrella-button");
+  var umbrellaButton = document.querySelector("#umbrella-button");
+  var umbrellaLogo = document.querySelector("#umbrella-logo");
   var audioFile = new Audio("/assets/media/rain.mp3");
 
   audioFile.addEventListener("timeupdate",
     function() {
       console.log('currentTime',this.currentTime);
-      var buffer = 0.65;//better?
+      var buffer = 0.85;
       if (this.currentTime > this.duration - buffer) {
         this.currentTime = 0;
         this.play();
@@ -16,7 +17,8 @@
     false
   );
 
-  ubmrellaButton.addEventListener("click", () => { //TODO touchup event?
+  umbrellaButton.addEventListener("click", () => { //TODO touchup event?
+    umbrellaLogo.classList.toggle('rotate');
     if (status.innerHTML === "Raining") {
       status.innerHTML = "Paused";
       audioFile.pause();

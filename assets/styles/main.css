@@ -49,6 +49,10 @@ h1 {
 }
 #umbrella-logo {
     width: 21vmin;
+    transition: transform 1.5s;
+}
+.rotate {
+    transform: rotate(-20deg);
 }
 @-webkit-keyframes fadeOut {
     from { opacity: 1; }
