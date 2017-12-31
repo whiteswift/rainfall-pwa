@@ -35,7 +35,7 @@
   <script type="text/javascript">
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('umbrella_sw.js', {
-      scope: '/'
+      scope: './'
     })
     .then(function(reg) {
       console.log('Service Worker Registered');
