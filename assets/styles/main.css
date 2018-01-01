@@ -48,11 +48,11 @@ h1 {
     cursor: pointer;
 }
 #umbrella-logo {
-    width: 21vmin;
+    width: 22vmin;
     transition: transform 1.5s;
 }
 .rotate {
-    transform: rotate(-20deg);
+    transform: rotate(-30deg);
 }
 @-webkit-keyframes fadeOut {
     from { opacity: 1; }
