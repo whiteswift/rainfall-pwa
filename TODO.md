@@ -1,12 +1,12 @@
 # TODO
 
 ## MVP
-- Delete gh-pages branch
+X- Delete gh-pages branch
 X- Theme colour
 X- Get sound
 X- Fix pause loop
-- Background media api playback
-    - test on mobile
+X- Background media api playback
+    X- test on mobile
 X- Get svg for rain icon
 X- favicon
 X- font-display
@@ -17,3 +17,4 @@ X- Get .woff2
 - Change background colour when working/not working - transition
 - Media queries to support wide screens
 - Animations - When buttons are pressed
+- More sounds 
