@@ -67,14 +67,6 @@
         'pause', () => {
         audioFile.pause();
       })
-      navigator.mediaSession.setActionHandler(
-        'previoustrack', () => {
-        restartAudio();
-      });
-      navigator.mediaSession.setActionHandler(
-        'nexttrack', () => {
-        restartAudio();
-      });
     }
   }
 
