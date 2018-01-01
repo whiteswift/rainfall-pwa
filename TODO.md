@@ -1,6 +1,7 @@
 # TODO
 
 ## MVP
+- Delete gh-pages branch
 X- Theme colour
 X- Get sound
 X- Fix pause loop
