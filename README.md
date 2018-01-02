@@ -8,15 +8,15 @@ An ambient noise app to help you concentrate on your work. Press the umbrella to
 
 ![alt tag](https://raw.githubusercontent.com/whiteswift/rainfall-pwa/master/assets/images/wallpaper.png)
 
+## Demo
+[https://whiteswift.github.io/rainfall-pwa](https://whiteswift.github.io/rainfall-pwa)
+
+
 ## Usage
 
-1. Start a simple HTTP python server
+1. Start a server e.g. `python -m SimpleHTTPServer 8080`
 
 2. Navigate to localhost:8080
-
-## Demo
-
-Coming soon
 
 ## Licence
 
