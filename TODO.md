@@ -13,8 +13,9 @@ X- font-display
 X- Get .woff2
 
 ## Nice to have
+- Outline and selection: none. Drag down none.
+- More sounds 
 - Get some design inspiration
 - Change background colour when working/not working - transition
 - Media queries to support wide screens
 - Animations - When buttons are pressed
-- More sounds 
