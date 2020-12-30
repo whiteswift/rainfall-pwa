@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Rainfall</title>
@@ -18,9 +19,15 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://whiteswift.github.io/rainfall-pwa/">
   <meta property="og:description" content="">
-  <style>body{background-color:#00abff;text-align:center;}</style>
+  <style>
+    body {
+      background-color: #00abff;
+      text-align: center;
+    }
+  </style>
   <link rel='stylesheet' type='text/css' href='assets/styles/main.css' />
 </head>
+
 <body>
   <div id='rainfall' class='flex-container'>
     <h1 id='status'>Rainfall</h1>
@@ -30,22 +37,28 @@
           <img id='umbrella-logo' class='rotate' src='assets/images/rain.svg' />
         </button>
       </div>
+      <select name='audio-select' id='audio-select'>
+        <option value='rain'>☔️</option>
+        <option value='window'>🪟</option>
+        <option value='thunder'>⚡️</option>
+      </select>
     </div>
   </div>
   <script type="text/javascript">
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('umbrella_sw.js', {
-      scope: './'
-    })
-    .then(function(reg) {
-      console.log(`Service Worker Registered. Scope: ${reg.scope}`);
-    });
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('umbrella_sw.js', {
+        scope: '/rainfall-pwa/'
+      })
+        .then(function (reg) {
+          console.log(`Service Worker Registered. Scope: ${reg.scope}`);
+        });
 
-    navigator.serviceWorker.ready.then(function(reg) {
-      console.log('Service Worker Ready');
-    })
-  }
+      navigator.serviceWorker.ready.then(function (reg) {
+        console.log('Service Worker Ready');
+      })
+    }
   </script>
   <script async src='assets/scripts/main.js'></script>
 </body>
+
 </html>

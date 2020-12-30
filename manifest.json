@@ -19,7 +19,7 @@
     }
   ],
   "start_url": "./",
-  "scope": "./",
+  "scope": "/rainfall-pwa/",
   "display": "fullscreen",
   "orientation": "portrait",
   "background_color": "#00abff",

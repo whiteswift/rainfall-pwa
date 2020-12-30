@@ -1,10 +1,8 @@
 # Rainfall-PWA
 
-An offline friendly, concentration tool progressive web app, built using service workers.
-
 ## What is Rainfall?
 
-An ambient noise app to help you concentrate on your work. Press the umbrella to hear a looped rainfall.
+An ambient noise progressive web app to help you concentrate on your work. Press the umbrella to hear a looped rainfall. Offline friendly and built using a service worker.
 
 ![alt tag](https://raw.githubusercontent.com/whiteswift/rainfall-pwa/master/assets/images/wallpaper.png)
 
@@ -12,11 +10,9 @@ An ambient noise app to help you concentrate on your work. Press the umbrella to
 [https://whiteswift.github.io/rainfall-pwa](https://whiteswift.github.io/rainfall-pwa)
 
 
-## Usage
+## To run locally
 
-1. Start a server e.g. `python -m SimpleHTTPServer 8080`
-
-2. Navigate to localhost:8080
+Navigate to index.html
 
 ## Licence
 

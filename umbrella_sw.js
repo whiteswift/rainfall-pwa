@@ -1,4 +1,4 @@
-// v1.8
+// v2.3
 
 self.addEventListener('install', e => {
   e.waitUntil(
@@ -14,20 +14,22 @@ self.addEventListener('install', e => {
         'assets/images/rainfall_144.png',
         'assets/images/rainfall_256.png',
         'assets/images/rainfall_512.png',
-        'assets/media/rain.mp3'
+        'assets/media/rain.mp3',
+        'assets/media/thunder.mp3',
+        'assets/media/window.mp3'
       ])
-      .then(() => self.skipWaiting());
+        .then(() => self.skipWaiting());
     })
   )
 });
 
-self.addEventListener('activate',  event => {
+self.addEventListener('activate', event => {
   event.waitUntil(self.clients.claim());
 });
 
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request, {ignoreSearch:true}).then(response => {
+    caches.match(event.request, { ignoreSearch: true }).then(response => {
       return response || fetch(event.request);
     })
   );

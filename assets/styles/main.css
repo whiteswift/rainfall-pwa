@@ -3,7 +3,6 @@ body {
     font-weight: 100;
     -webkit-font-smoothing: antialiased;
     font-family: 'Gotham-medium', Arial, sans-serif;
-    font-display: swap;
     user-select: none;
 }
 .visible {
@@ -66,4 +65,7 @@ h1 {
     font-family: 'Gotham-medium';
     src: url('../fonts/gotham-medium.woff2') format('woff2');
     font-display: swap;
+}
+#audio-select { 
+    margin-top: 1em;
 }
