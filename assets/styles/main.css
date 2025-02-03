@@ -40,7 +40,7 @@ h1 {
   font-weight: 100;
   font-size: 15vmin;
   transition: 0.5s ease;
-  margin: 0;
+  margin: 0.5em 0 0;
 }
 
 #umbrella-button {
