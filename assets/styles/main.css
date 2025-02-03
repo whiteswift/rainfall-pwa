@@ -1,71 +1,114 @@
 body {
-    margin: 0;
-    font-weight: 100;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Gotham-medium', Arial, sans-serif;
-    user-select: none;
+  margin: 0;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Gotham-medium", Arial, sans-serif;
+  user-select: none;
 }
+
+@font-face {
+  font-family: "Gotham-medium";
+  src: url("../fonts/gotham-medium.woff2") format("woff2");
+  font-display: swap;
+}
+
 .visible {
   display: inline-block;
 }
+
 .hidden {
   display: none;
 }
+
 #container {
-    margin: 3em;
+  margin: 3em;
 }
-.flex-container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column
+
+.rain-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  flex-direction: column;
 }
+
 h1 {
-    color: #eee;
-    font-weight: 100;
-    font-size: 15vmin;
-    padding-top: 6vmin;
-    transition: 0.5s ease;
+  color: #eee;
+  font-weight: 100;
+  font-size: 15vmin;
+  transition: 0.5s ease;
+  margin: 0;
 }
+
 #umbrella-button {
-    border: none;
-    background: none;
-    margin-top: 3vmin;
-    outline: none;
-    cursor: pointer;
+  border: none;
+  background: none;
+  margin-top: 3vmin;
+  outline: none;
+  cursor: pointer;
 }
+
 #umbrella-logo {
-    width: 22vmin;
-    transition: transform 1s;
+  width: 22vmin;
+  transition: transform 1s;
 }
+
 .rotate {
-    transform: rotate(-30deg);
+  transform: rotate(-30deg);
 }
+
 @-webkit-keyframes fadeOut {
-    from { opacity: 1; }
-      to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
+
 @keyframes fadeOut {
-    from { opacity: 1; }
-      to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
-@font-face {
-    font-family: 'Gotham-medium';
-    src: url('../fonts/gotham-medium.woff2') format('woff2');
-    font-display: swap;
+
+.audio-select {
+  height: 10vw;
+  width: 10vw;
+  text-align: center;
+  font-size: 4vmin;
+  transition: 0.3s;
+  transform: scaleY(0);
 }
-#audio-select { 
-    margin-top: 1em;
+
+.audio-select-visible {
+  transform: scaleY(1);
+}
+
+.audio-toggle-container {
+  display: flex;
+  flex-flow: column;
+  margin-top: 3em;
+  align-items: center;
+}
+
+#btn-audio-toggle {
+  border: none;
+  background: none;
+  font-size: 8vmin;
+  color: #dedede;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.5em;
+}
+
+.audio-toggle-open {
+  transform: rotate(45deg);
 }

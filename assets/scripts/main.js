@@ -1,17 +1,19 @@
 (function () {
   "use strict";
   const status = document.getElementById("status");
-  const umbrellaButton = document.querySelector("#umbrella-button");
-  const umbrellaLogo = document.querySelector("#umbrella-logo");
-  const audioSelect = document.querySelector("#audio-select");
-  let audioFile; // = new Audio(`assets/media/rain.mp3`);
+  const umbrellaButton = document.getElementById("umbrella-button");
+  const umbrellaLogo = document.getElementById("umbrella-logo");
+  const audioSelect = document.getElementById("audio-select");
+  const audioButtonToggle = document.getElementById('btn-audio-toggle');
 
-  function getAudioFile() {
+  let audioFile;
+
+  function setAudioFile() {
     const fileName = `${audioSelect.value}.mp3`;
     audioFile = new Audio(`assets/media/${fileName}`);
   }
 
-  function attachAudioLoopEvent() {
+  function setAudioLoopEvent() {
     audioFile.addEventListener("timeupdate",
       function () {
         // console.log('currentTime',this.currentTime);
@@ -25,16 +27,36 @@
     );
   }
 
-  umbrellaButton.addEventListener("click", () => { //TODO touchup event?
+  umbrellaButton.addEventListener("click", () => { // TODO touchup event?
     umbrellaLogo.classList.toggle('rotate');
     if (status.innerHTML === "Raining") {
-      status.innerHTML = "Paused";
       audioFile.pause();
+      status.innerHTML = "Paused";
     } else {
-      status.innerHTML = "Raining";
-      getAudioFile()
-      attachAudioLoopEvent()
+      setAudioFile();
+      setAudioLoopEvent();
       audioFile.play();
+      status.innerHTML = "Raining";
+    }
+  });
+
+  audioButtonToggle.addEventListener('click', () => {
+    audioButtonToggle.classList.toggle('audio-toggle-open');
+    audioSelect.classList.toggle('audio-select-visible')
+  });
+
+  audioSelect.addEventListener('change', () => {
+    if (status.innerHTML === "Raining") {
+      // Audio is already playing so update
+      // the audio file and restart playback
+      audioFile.pause();
+      setAudioFile();
+      setAudioLoopEvent();
+      audioFile.play();
+    } else {
+      // Audio is not already playing so update
+      // the audio file but do not start playback
+      setAudioFile();
     }
   });
 
@@ -50,7 +72,7 @@
     });
   });
 
-  function restartAudio() {
+  function restartAudio() { // ?
     audioFile.close();
     audioFile.start();
   }

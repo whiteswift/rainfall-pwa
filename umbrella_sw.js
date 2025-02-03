@@ -16,7 +16,8 @@ self.addEventListener('install', e => {
         'assets/images/rainfall_512.png',
         'assets/media/rain.mp3',
         'assets/media/thunder.mp3',
-        'assets/media/window.mp3'
+        'assets/media/window.mp3',
+        'assets/media/4hz.mp3',
       ])
         .then(() => self.skipWaiting());
     })

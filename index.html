@@ -1,64 +1,77 @@
 <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Rainfall</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Soothing rain sounds to help you concentrate ☔️"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="https://whiteswift.github.io/rainfall-pwa/" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Rainfall ☔️" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Rainfall ☔️" />
+    <link rel="icon" sizes="144x144" href="assets/images/rainfall_144.png" />
+    <meta name="theme-color" content="#00abff" />
+    <meta property="og:title" content="Rainfall ☔️" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://whiteswift.github.io/rainfall-pwa/"
+    />
+    <meta property="og:description" content="" />
+    <style>
+      body {
+        background-color: #00abff;
+        text-align: center;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
+  </head>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Rainfall</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Soothing rain sounds to help you concentrate ☔️">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="https://whiteswift.github.io/rainfall-pwa/">
-  <link rel="manifest" href="manifest.json">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Rainfall ☔️">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Rainfall ☔️">
-  <link rel="icon" sizes="144x144" href="assets/images/rainfall_144.png">
-  <meta name="theme-color" content="#00abff">
-  <meta property="og:title" content="Rainfall ☔️">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://whiteswift.github.io/rainfall-pwa/">
-  <meta property="og:description" content="">
-  <style>
-    body {
-      background-color: #00abff;
-      text-align: center;
-    }
-  </style>
-  <link rel='stylesheet' type='text/css' href='assets/styles/main.css' />
-</head>
-
-<body>
-  <div id='rainfall' class='flex-container'>
-    <h1 id='status'>Rainfall</h1>
-    <div id='container'>
-      <div id='button-container'>
-        <button id='umbrella-button' class='visible'>
-          <img id='umbrella-logo' class='rotate' src='assets/images/rain.svg' />
-        </button>
+  <body>
+    <div id="rainfall" class="rain-container">
+      <h1 id="status">Rainfall</h1>
+      <div id="container">
+        <div id="button-container">
+          <button id="umbrella-button" class="visible">
+            <img
+              id="umbrella-logo"
+              class="rotate"
+              src="assets/images/rain.svg"
+            />
+          </button>
+        </div>
+        <div class="audio-toggle-container">
+          <button id="btn-audio-toggle">+</button>
+          <select name="audio-select" id="audio-select" class="audio-select">
+            <option value="rain">☔️</option>
+            <option value="window">🪟</option>
+            <option value="thunder">⚡️</option>
+            <option value="4hz">🧠</option>
+          </select>
+        </div>
       </div>
-      <select name='audio-select' id='audio-select'>
-        <option value='rain'>☔️</option>
-        <option value='window'>🪟</option>
-        <option value='thunder'>⚡️</option>
-      </select>
     </div>
-  </div>
-  <script type="text/javascript">
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('umbrella_sw.js', {
-        scope: '/rainfall-pwa/'
-      })
-        .then(function (reg) {
-          console.log(`Service Worker Registered. Scope: ${reg.scope}`);
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("umbrella_sw.js", {
+            scope: "/rainfall-pwa/",
+          })
+          .then(function (reg) {
+            console.log(`Service Worker Registered. Scope: ${reg.scope}`);
+          });
+
+        navigator.serviceWorker.ready.then(function (reg) {
+          console.log("Service Worker Ready");
         });
-
-      navigator.serviceWorker.ready.then(function (reg) {
-        console.log('Service Worker Ready');
-      })
-    }
-  </script>
-  <script async src='assets/scripts/main.js'></script>
-</body>
-
+      }
+    </script>
+    <script async src="assets/scripts/main.js"></script>
+  </body>
 </html>
