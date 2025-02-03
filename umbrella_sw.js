@@ -1,4 +1,4 @@
-// v3.1
+// v3.2
 
 self.addEventListener('install', e => {
   e.waitUntil(

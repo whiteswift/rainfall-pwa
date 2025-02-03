@@ -85,6 +85,7 @@ h1 {
   font-size: 4vmin;
   transition: 0.3s;
   transform: scaleY(0);
+  background: linear-gradient(0deg, #857171, transparent);
 }
 
 .audio-select-visible {
